@@ -154,7 +154,8 @@
 				}
 			}
 
-			.savings-wrapper {
+			.savings-wrapper,
+			.recent-transaction-wrapper {
 				.see-all-btn {
 					color: $blue-800;
 				}
@@ -286,6 +287,37 @@
 
 						.x-data {
 							margin-top: 16px;
+						}
+					}
+				}
+			}
+
+			.recent-transaction-wrapper {
+				.transaction-list {
+					.transaction {
+						padding-block: 8px;
+						margin-bottom: 24px;
+
+						.icon-box {
+							background-color: $neutral-400;
+							max-width: 48px;
+							width: 100%;
+							height: 48px;
+							margin-right: 8px;
+
+							.icon-gallery {
+								max-width: 20px;
+								height: 20px;
+							}
+						}
+
+						.transaction-amount,
+						.transaction-name {
+							margin-bottom: 4px;
+						}
+
+						.transaction-status {
+							color: $green-400;
 						}
 					}
 				}
