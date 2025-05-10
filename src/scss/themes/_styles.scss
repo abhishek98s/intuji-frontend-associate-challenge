@@ -62,6 +62,39 @@ ul {
 	padding-inline-start: 0;
 }
 
+select {
+	min-width: 90px;
+	padding: 8px 32px 8px 8px;
+	border-radius: 8px;
+	color: $neutral-500;
+	outline: 1px solid $neutral-300;
+	border: none;
+	-webkit-appearance: none;
+
+	&:focus,
+	&:focus-visible,
+	&:focus-within {
+		outline: 1px solid $neutral-500;
+		border: none;
+	}
+
+}
+
+.select-wrapper {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: '';
+		width: 17px;
+		height: 17px;
+		top: 50%;
+		right: 8px;
+		transform: translateY(-50%);
+		background: url('../../images/icons/icon-select-arrow.svg') no-repeat center / 17px 17px;
+	}
+}
+
 .icon-wrapper {
 	max-width: 24px;
 	width: 100%;
