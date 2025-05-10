@@ -1,0 +1,52 @@
+@use './vars' as *;
+
+.dashboard--wrapper {
+  max-width: 280px;
+  width: 100%;
+  background-color: $neutral-0;
+  padding-block: 32px;
+
+  .logo-wrapper {
+    max-width: 178px;
+    width: 100%;
+    background-color: $neutral-400;
+    min-height: 52px;
+    margin-left: 36px;
+  }
+
+  .nav-list-wrapper {
+    margin-top: 33px;
+    height: calc(100% - 32px - 52px);
+
+    .line {
+      max-width: 219px;
+      width: 100%;
+      margin-block: 32px;
+      height: 1px;
+      background-color: $blue-800;
+    }
+
+    .nav-item {
+      padding-left: 45px;
+      min-height: 64px;
+      gap: 16px;
+
+      &.active {
+        padding-left: 50px;
+        position: relative;
+        font-weight: 600;
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          content: '';
+          width: 4px;
+          height: 48px;
+          background-color: $blue-700;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
