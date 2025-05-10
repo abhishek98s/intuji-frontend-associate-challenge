@@ -1,52 +1,238 @@
 @use './vars' as *;
 
-.dashboard--wrapper {
-  max-width: 280px;
-  width: 100%;
-  background-color: $neutral-0;
-  padding-block: 32px;
+.dashboard-page-wrapper {
+	.nav-wrapper {
+		max-width: 280px;
+		width: 100%;
+		background-color: $neutral-0;
+		padding-block: 32px;
 
-  .logo-wrapper {
-    max-width: 178px;
-    width: 100%;
-    background-color: $neutral-400;
-    min-height: 52px;
-    margin-left: 36px;
-  }
+		.logo-wrapper {
+			max-width: 178px;
+			width: 100%;
+			background-color: $neutral-400;
+			min-height: 52px;
+			margin-left: 36px;
+		}
 
-  .nav-list-wrapper {
-    margin-top: 33px;
-    height: calc(100% - 32px - 52px);
+		.nav-list-wrapper {
+			margin-top: 33px;
+			height: calc(100% - 32px - 52px);
 
-    .line {
-      max-width: 219px;
-      width: 100%;
-      margin-block: 32px;
-      height: 1px;
-      background-color: $blue-800;
-    }
+			.line {
+				max-width: 219px;
+				width: 100%;
+				margin-block: 32px;
+				height: 1px;
+				background-color: $blue-800;
+			}
 
-    .nav-item {
-      padding-left: 45px;
-      min-height: 64px;
-      gap: 16px;
+			.nav-item {
+				padding-left: 45px;
+				min-height: 64px;
+				gap: 16px;
 
-      &.active {
-        padding-left: 50px;
-        position: relative;
-        font-weight: 600;
+				&.active {
+					padding-left: 50px;
+					position: relative;
+					font-weight: 600;
 
-        &::before {
-          position: absolute;
-          top: 50%;
-          left: 0;
-          content: '';
-          width: 4px;
-          height: 48px;
-          background-color: $blue-700;
-          transform: translateY(-50%);
-        }
-      }
-    }
-  }
+					&::before {
+						position: absolute;
+						top: 50%;
+						left: 0;
+						content: '';
+						width: 4px;
+						height: 48px;
+						background-color: $blue-700;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+	}
+
+	main {
+		.sc-dashboard-content {
+			margin-top: 32px;
+			display: grid;
+			grid-template-columns: auto 350px;
+			gap: 24px;
+
+			&>* {
+				padding: 16px;
+				border-radius: 14px;
+			}
+
+			.overview-wrapper {
+				.overview-box {
+					margin-top: 24px;
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 18px;
+
+					.overview-item {
+						padding: 20px;
+						border-radius: 14px;
+						min-height: 165px;
+						border: 1px solid hsla(0, 0%, 87%, 0.70);
+
+						&.active {
+							border: 1px transparent;
+							background-color: $blue-700;
+
+							.icon-arrow-right {
+								stroke: $neutral-0;
+							}
+
+							.label,
+							.description,
+							.amount {
+								color: $neutral-0;
+							}
+
+							.line {
+								background-color: $neutral-0;
+							}
+
+							.icon-balance-box {
+								border: 1px solid hsla(0, 0%, 87%, 0.20);
+							}
+						}
+
+						.icon-balance-box {
+							max-width: 48px;
+							width: 100%;
+							height: 48px;
+							border-radius: 100px;
+							border: 1px solid $neutral-410;
+							margin-right: 9px;
+
+							.icon-wrapper {
+								max-width: 32px;
+								height: 32px;
+							}
+						}
+
+						.description {
+							.icon-wrapper {
+								max-width: 14px;
+								height: 14px;
+								margin-right: 4px;
+
+								svg {
+									fill: $green-500;
+
+									&.fill-red {
+										fill: $red-400;
+									}
+
+									&.fill-yellow {
+										fill: $yellow-400;
+									}
+
+									&.fill-blue {
+										fill: $blue-400;
+									}
+								}
+							}
+						}
+
+						.amount {
+							letter-spacing: -3px;
+						}
+
+						.line {
+							background-color: $blue-800;
+						}
+
+						.icon-arrow-right {
+							stroke: $blue-800;
+						}
+					}
+
+				}
+			}
+
+			.savings-wrapper {
+				.see-all-btn {
+					color: $blue-800;
+				}
+
+				.line {
+					margin-block: 24px;
+				}
+
+				.savings-list {
+					.saving {
+						padding: 8px;
+						margin-bottom: 16px;
+
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+
+						.amount-wrapper {
+							margin-top: 14px;
+
+							.actual,
+							.expected {
+								letter-spacing: -1px;
+							}
+
+							&.blue {
+								.completion {
+									color: $blue-700;
+								}
+
+								.range {
+									background-color: $blue-700;
+								}
+							}
+
+							&.yellow {
+								.completion {
+									color: $yellow-500;
+								}
+
+								.range {
+									background-color: $yellow-500;
+								}
+							}
+
+							&.green {
+								.completion {
+									color: $green-400;
+								}
+
+								.range {
+									background-color: $green-400;
+								}
+							}
+
+							.range-wrapper {
+								margin-top: 12px;
+								background-color: $neutral-300;
+								height: 8px;
+
+								.range {
+									&.range-48 {
+										width: 48%;
+									}
+
+									&.range-79 {
+										width: 79%;
+									}
+
+									&.range-32 {
+										width: 32%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

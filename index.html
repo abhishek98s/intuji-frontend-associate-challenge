@@ -1,141 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Finance Dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./dist/css/styles.css" />
-  </head>
-  <body>
-    <div class="page-wrapper">
-      <aside class="dashboard--wrapper position-fixed top-0 bottom-0">
-        <header class="logo-wrapper align-content-center">
-          <figure class="mx-auto icon-wrapper">
-            <img src="images/icons/icon-gallery.svg" alt="icon-gallery" />
-          </figure>
-        </header>
 
-        <ul class="nav-list-wrapper flex column">
-          <li>
-            <a href="#">
-              <div class="nav-item active flex flex align-center">
-                <figure class="icon-wrapper">
-                  <img
-                    src="images/icons/icon-dashboard.svg"
-                    alt="icon-dashboard"
-                  />
-                </figure>
-                <div>Dashboard</div>
-              </div>
-            </a>
-          </li>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Finance Dashboard</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="./dist/css/styles.css" />
+</head>
 
-          <li>
-            <a href="#">
-              <div class="nav-item flex flex align-center">
-                <figure class="icon-wrapper">
-                  <img
-                    src="images/icons/icon-calendar.svg"
-                    alt="icon-calendar"
-                  />
-                </figure>
-                <div>Schedule</div>
-              </div>
-            </a>
-          </li>
+<body>
+	<div class="page-wrapper dashboard-page-wrapper">
+		<aside class="nav-wrapper position-fixed top-0 bottom-0 left-0">
+			<header class="logo-wrapper align-content-center">
+				<figure class="mx-auto icon-wrapper">
+					<img src="images/icons/icon-gallery.svg" alt="icon-gallery" />
+				</figure>
+			</header>
 
-          <li>
-            <a href="#">
-              <div class="nav-item flex flex align-center">
-                <figure class="icon-wrapper">
-                  <img src="images/icons/icon-message.svg" alt="icon-message" />
-                </figure>
-                <div>Message</div>
-              </div>
-            </a>
-          </li>
+			<ul class="nav-list-wrapper flex column">
+				<li>
+					<a href="#">
+						<div class="nav-item active flex flex align-center">
+							<figure class="icon-wrapper">
+								<img src="images/icons/icon-dashboard.svg" alt="icon-dashboard" />
+							</figure>
+							<div>Dashboard</div>
+						</div>
+					</a>
+				</li>
 
-          <li>
-            <a href="#">
-              <div class="nav-item flex flex align-center">
-                <figure class="icon-wrapper">
-                  <img
-                    src="images/icons/icon-analytics.svg"
-                    alt="icon-analytics"
-                  />
-                </figure>
-                <div>Analytics</div>
-              </div>
-            </a>
-          </li>
+				<li>
+					<a href="#">
+						<div class="nav-item flex flex align-center">
+							<figure class="icon-wrapper">
+								<img src="images/icons/icon-calendar.svg" alt="icon-calendar" />
+							</figure>
+							<div>Schedule</div>
+						</div>
+					</a>
+				</li>
 
-          <li>
-            <a href="#">
-              <div class="nav-item flex flex align-center">
-                <figure class="icon-wrapper">
-                  <img src="images/icons/icon-team.svg" alt="icon-team" />
-                </figure>
-                <div>Team</div>
-              </div>
-            </a>
-          </li>
+				<li>
+					<a href="#">
+						<div class="nav-item flex flex align-center">
+							<figure class="icon-wrapper">
+								<img src="images/icons/icon-message.svg" alt="icon-message" />
+							</figure>
+							<div>Message</div>
+						</div>
+					</a>
+				</li>
 
-          <div class="line mx-auto opacity-30"></div>
+				<li>
+					<a href="#">
+						<div class="nav-item flex flex align-center">
+							<figure class="icon-wrapper">
+								<img src="images/icons/icon-analytics.svg" alt="icon-analytics" />
+							</figure>
+							<div>Analytics</div>
+						</div>
+					</a>
+				</li>
 
-          <li>
-            <a href="#">
-              <div class="nav-item flex flex align-center">
-                <figure class="icon-wrapper">
-                  <img src="images/icons/icon-team.svg" alt="icon-team" />
-                </figure>
-                <div>Profile</div>
-              </div>
-            </a>
-          </li>
+				<li>
+					<a href="#">
+						<div class="nav-item flex flex align-center">
+							<figure class="icon-wrapper">
+								<img src="images/icons/icon-team.svg" alt="icon-team" />
+							</figure>
+							<div>Team</div>
+						</div>
+					</a>
+				</li>
 
-          <li>
-            <a href="#">
-              <div class="nav-item flex flex align-center">
-                <figure class="icon-wrapper">
-                  <img
-                    src="images/icons/icon-settings.svg"
-                    alt="icon-settings"
-                  />
-                </figure>
-                <div>Settings</div>
-              </div>
-            </a>
-          </li>
+				<div class="line mx-auto opacity-30"></div>
 
-          <li class="mt-auto">
-            <a href="#">
-              <div class="nav-item flex flex align-center">
-                <figure class="icon-wrapper">
-                  <img src="images/icons/icon-help.svg" alt="icon-help" />
-                </figure>
-                <div>Help</div>
-              </div>
-            </a>
-          </li>
+				<li>
+					<a href="#">
+						<div class="nav-item flex flex align-center">
+							<figure class="icon-wrapper">
+								<img src="images/icons/icon-people.svg" alt="icon-people" />
+							</figure>
+							<div>Profile</div>
+						</div>
+					</a>
+				</li>
 
-          <li>
-            <a href="#">
-              <div class="nav-item flex flex align-center">
-                <figure class="icon-wrapper">
-                  <img src="images/icons/icon-logout.svg" alt="icon-logout" />
-                </figure>
-                <div>Logout</div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </aside>
-    </div>
-  </body>
+				<li>
+					<a href="#">
+						<div class="nav-item flex flex align-center">
+							<figure class="icon-wrapper">
+								<img src="images/icons/icon-settings.svg" alt="icon-settings" />
+							</figure>
+							<div>Settings</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="mt-auto">
+					<a href="#">
+						<div class="nav-item flex flex align-center">
+							<figure class="icon-wrapper">
+								<img src="images/icons/icon-help.svg" alt="icon-help" />
+							</figure>
+							<div>Help</div>
+						</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<div class="nav-item flex flex align-center">
+							<figure class="icon-wrapper">
+								<img src="images/icons/icon-logout.svg" alt="icon-logout" />
+							</figure>
+							<div>Logout</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</aside>
+		<main>
+			<header class="top-header flex">
+				<div class="search-wrapper flex flex-grow align-content-center bg-neutral-0">
+					<div class="flex align-center">
+						<figure class="icon-search icon-wrapper">
+							<img src="images/icons/icon-search.svg" alt="icon-search" />
+						</figure>
+						<input type="text" placeholder="Search here..." />
+					</div>
+				</div>
+
+				<div class="user-info-wrapper flex flex-grow bg-neutral-0">
+					<a href="#" class="icon-box flex flex-center">
+						<figure class="icon-wrapper">
+							<img src="images/icons/icon-notification.svg" alt="icon-notification" />
+						</figure>
+					</a>
+
+					<a href="#" class="icon-box flex flex-center">
+						<figure class="icon-wrapper">
+							<img src="images/icons/icon-message.svg" alt="icon-message" />
+						</figure>
+					</a>
+
+					<div class="user-details-wrapper flex align-center flex-grow">
+						<a href="#" class="icon-box icon-user flex flex-center">
+							<figure class="icon-wrapper">
+								<img src="images/icons/icon-gallery.svg" alt="icon-gallery" />
+							</figure>
+						</a>
+
+						<div class="name">Mirie Kiritani</div>
+
+						<figure class="icon-wrapper">
+							<img src="images/icons/icon-arrow-down.svg" alt="icon-arrow-down" />
+						</figure>
+					</div>
+				</div>
+			</header>
+
+			<section class="sc-dashboard-content">
+				<article class="overview-wrapper bg-neutral-0">
+					<header>
+						<h2 class="text-20 font-bold">Overview</h2>
+					</header>
+
+					<div class="overview-box">
+						<div class="overview-item active flex column justify-between">
+							<div class="flex">
+								<div class="icon-balance-box flex flex-center">
+									<figure class="icon-wrapper">
+										<img src="images/icons/icon-balance.svg" alt="icon-balance">
+									</figure>
+								</div>
+								<div class="flex flex-grow column justify-between">
+									<div class="label text-18 font-semi-bold">Your Balance</div>
+									<div class="description flex align-center">
+										<figure class="icon-wrapper">
+											<svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.4"
+													d="M9.444 1.66663H4.55567C2.43234 1.66663 1.1665 2.93246 1.1665 5.05579V9.93829C1.1665 12.0675 2.43234 13.3333 4.55567 13.3333H9.43817C11.5615 13.3333 12.8273 12.0675 12.8273 9.94413V5.05579C12.8332 2.93246 11.5673 1.66663 9.444 1.66663Z" />
+												<path
+													d="M9.76954 4.58337H6.95204C6.71287 4.58337 6.51454 4.78171 6.51454 5.02087C6.51454 5.26004 6.71287 5.45837 6.95204 5.45837H8.7137L4.21037 9.96171C4.0412 10.1309 4.0412 10.4109 4.21037 10.58C4.29787 10.6675 4.4087 10.7084 4.51954 10.7084C4.63037 10.7084 4.7412 10.6675 4.8287 10.58L9.33204 6.07671V7.83837C9.33204 8.07754 9.53037 8.27587 9.76954 8.27587C10.0087 8.27587 10.207 8.07754 10.207 7.83837V5.02087C10.207 4.78171 10.0087 4.58337 9.76954 4.58337Z" />
+											</svg>
+										</figure>
+										<div class="flex flex-grow text-12 opacity-60">
+											15 % compared with last month
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="line opacity-20"></div>
+							<div class="flex align-center justify-between">
+								<div class="amount text-28 font-semi-bold">$ 28,891.138</div>
+								<figure class="icon-arrow-right white icon-wrapper">
+									<svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.9302 5.93005L21.0002 12.0001L14.9302 18.0701" stroke-width="1.5"
+											stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M11.5098 12H20.8298" stroke-width="1.5" stroke-miterlimit="10"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M4 12H7.47" stroke-width="1.5" stroke-miterlimit="10"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</figure>
+							</div>
+						</div>
+						<div class="overview-item flex column justify-between">
+							<div class="flex">
+								<div class="icon-balance-box flex flex-center">
+									<figure class="icon-wrapper">
+										<img src="images/icons/icon-saving.svg" alt="icon-saving">
+									</figure>
+								</div>
+								<div class="flex flex-grow column justify-between">
+									<div class="label text-18 font-semi-bold">Saving</div>
+									<div class="description flex align-center">
+										<figure class="icon-wrapper">
+											<svg class="fill-red" width="14" height="15" viewBox="0 0 14 15" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.4"
+													d="M9.444 1.66663H4.55567C2.43234 1.66663 1.1665 2.93246 1.1665 5.05579V9.93829C1.1665 12.0675 2.43234 13.3333 4.55567 13.3333H9.43817C11.5615 13.3333 12.8273 12.0675 12.8273 9.94413V5.05579C12.8332 2.93246 11.5673 1.66663 9.444 1.66663Z" />
+												<path
+													d="M9.76954 4.58337H6.95204C6.71287 4.58337 6.51454 4.78171 6.51454 5.02087C6.51454 5.26004 6.71287 5.45837 6.95204 5.45837H8.7137L4.21037 9.96171C4.0412 10.1309 4.0412 10.4109 4.21037 10.58C4.29787 10.6675 4.4087 10.7084 4.51954 10.7084C4.63037 10.7084 4.7412 10.6675 4.8287 10.58L9.33204 6.07671V7.83837C9.33204 8.07754 9.53037 8.27587 9.76954 8.27587C10.0087 8.27587 10.207 8.07754 10.207 7.83837V5.02087C10.207 4.78171 10.0087 4.58337 9.76954 4.58337Z" />
+											</svg>
+										</figure>
+										<div class="flex flex-grow text-12 opacity-60">
+											10 % compared with last month
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="line opacity-20"></div>
+							<div class="flex align-center justify-between">
+								<div class="amount text-28 font-semi-bold">$ 1,050.44</div>
+								<figure class="icon-arrow-right white icon-wrapper">
+									<svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.9302 5.93005L21.0002 12.0001L14.9302 18.0701" stroke-width="1.5"
+											stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M11.5098 12H20.8298" stroke-width="1.5" stroke-miterlimit="10"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M4 12H7.47" stroke-width="1.5" stroke-miterlimit="10"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</figure>
+							</div>
+						</div>
+						<div class="overview-item flex column justify-between">
+							<div class="flex">
+								<div class="icon-balance-box flex flex-center">
+									<figure class="icon-wrapper">
+										<img src="images/icons/icon-saving.svg" alt="icon-saving">
+									</figure>
+								</div>
+								<div class="flex flex-grow column justify-between">
+									<div class="label text-18 font-semi-bold">Expenses</div>
+									<div class="description flex align-center">
+										<figure class="icon-wrapper">
+											<svg class="fill-yellow" width="14" height="15" viewBox="0 0 14 15"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.4"
+													d="M9.444 1.66663H4.55567C2.43234 1.66663 1.1665 2.93246 1.1665 5.05579V9.93829C1.1665 12.0675 2.43234 13.3333 4.55567 13.3333H9.43817C11.5615 13.3333 12.8273 12.0675 12.8273 9.94413V5.05579C12.8332 2.93246 11.5673 1.66663 9.444 1.66663Z" />
+												<path
+													d="M9.76954 4.58337H6.95204C6.71287 4.58337 6.51454 4.78171 6.51454 5.02087C6.51454 5.26004 6.71287 5.45837 6.95204 5.45837H8.7137L4.21037 9.96171C4.0412 10.1309 4.0412 10.4109 4.21037 10.58C4.29787 10.6675 4.4087 10.7084 4.51954 10.7084C4.63037 10.7084 4.7412 10.6675 4.8287 10.58L9.33204 6.07671V7.83837C9.33204 8.07754 9.53037 8.27587 9.76954 8.27587C10.0087 8.27587 10.207 8.07754 10.207 7.83837V5.02087C10.207 4.78171 10.0087 4.58337 9.76954 4.58337Z" />
+											</svg>
+										</figure>
+										<div class="flex flex-grow text-12 opacity-60">
+											2 % compared with last montg
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="line opacity-20"></div>
+							<div class="flex align-center justify-between">
+								<div class="amount text-28 font-semi-bold">$ 200.31</div>
+								<figure class="icon-arrow-right white icon-wrapper">
+									<svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.9302 5.93005L21.0002 12.0001L14.9302 18.0701" stroke-width="1.5"
+											stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M11.5098 12H20.8298" stroke-width="1.5" stroke-miterlimit="10"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M4 12H7.47" stroke-width="1.5" stroke-miterlimit="10"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</figure>
+							</div>
+						</div>
+						<div class="overview-item flex column justify-between">
+							<div class="flex">
+								<div class="icon-balance-box flex flex-center">
+									<figure class="icon-wrapper">
+										<img src="images/icons/icon-income.svg" alt="icon-income">
+									</figure>
+								</div>
+								<div class="flex flex-grow column justify-between">
+									<div class="label text-18 font-semi-bold">Incomes</div>
+									<div class="description flex align-center">
+										<figure class="icon-wrapper">
+											<svg class="fill-blue" width="14" height="15" viewBox="0 0 14 15"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.4"
+													d="M9.444 1.66663H4.55567C2.43234 1.66663 1.1665 2.93246 1.1665 5.05579V9.93829C1.1665 12.0675 2.43234 13.3333 4.55567 13.3333H9.43817C11.5615 13.3333 12.8273 12.0675 12.8273 9.94413V5.05579C12.8332 2.93246 11.5673 1.66663 9.444 1.66663Z" />
+												<path
+													d="M9.76954 4.58337H6.95204C6.71287 4.58337 6.51454 4.78171 6.51454 5.02087C6.51454 5.26004 6.71287 5.45837 6.95204 5.45837H8.7137L4.21037 9.96171C4.0412 10.1309 4.0412 10.4109 4.21037 10.58C4.29787 10.6675 4.4087 10.7084 4.51954 10.7084C4.63037 10.7084 4.7412 10.6675 4.8287 10.58L9.33204 6.07671V7.83837C9.33204 8.07754 9.53037 8.27587 9.76954 8.27587C10.0087 8.27587 10.207 8.07754 10.207 7.83837V5.02087C10.207 4.78171 10.0087 4.58337 9.76954 4.58337Z" />
+											</svg>
+										</figure>
+										<div class="flex flex-grow text-12 opacity-60">
+											8 % compared with last montg
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="line opacity-20"></div>
+							<div class="flex align-center justify-between">
+								<div class="amount text-28 font-semi-bold">$ 21,121.0</div>
+								<figure class="icon-arrow-right white icon-wrapper">
+									<svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.9302 5.93005L21.0002 12.0001L14.9302 18.0701" stroke-width="1.5"
+											stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M11.5098 12H20.8298" stroke-width="1.5" stroke-miterlimit="10"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M4 12H7.47" stroke-width="1.5" stroke-miterlimit="10"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="savings-wrapper bg-neutral-0">
+					<header class="flex align-center justify-between">
+						<h2 class="text-20 font-bold">Savings</h2>
+						<a href="#" class="see-all-btn font-medium">See all</a>
+					</header>
+					<div class="line opacity-10"></div>
+					<div class="savings-list">
+						<div class="saving">
+							<div class="flex align-center justify-between">
+								<div class="font-medium">Bali vacation</div>
+								<div class="text-12 opacity-60">Target: August 25 2022</div>
+							</div>
+
+							<div class="amount-wrapper blue">
+								<div class="flex align-end font-semi-bold">
+									<div class="actual text-20">$ 1950,21</div>
+									<div class="expected text-12 opacity-50">/ $ 4000</div>
+
+									<div class="completion ml-auto text-18">40%</div>
+								</div>
+								<div class="range-wrapper rounded-full w-100">
+									<div class="range range-48 h-100 rounded-full"></div>
+								</div>
+							</div>
+						</div>
+						<div class="saving">
+							<div class="flex align-center justify-between">
+								<div class="font-medium">New Gadget</div>
+								<div class="text-12 opacity-60">Target: August 25 2022</div>
+							</div>
+
+							<div class="amount-wrapper yellow">
+								<div class="flex align-end font-semi-bold">
+									<div class="actual text-20">$ 790,21</div>
+									<div class="expected text-12 opacity-50">/ $ 1000</div>
+
+									<div class="completion ml-auto text-18">79%</div>
+								</div>
+								<div class="range-wrapper rounded-full w-100">
+									<div class="range range-48 h-100 rounded-full"></div>
+								</div>
+							</div>
+						</div>
+						<div class="saving">
+							<div class="flex align-center justify-between">
+								<div class="font-medium">Charity</div>
+								<div class="text-12 opacity-60">Target: August 25 2022</div>
+							</div>
+
+							<div class="amount-wrapper green">
+								<div class="flex align-end font-semi-bold">
+									<div class="actual text-20">$ 32,111</div>
+									<div class="expected text-12 opacity-50">/ $ 100</div>
+
+									<div class="completion ml-auto text-18">32%</div>
+								</div>
+								<div class="range-wrapper rounded-full w-100">
+									<div class="range range-48 h-100 rounded-full"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+		</main>
+	</div>
+</body>
+
 </html>
