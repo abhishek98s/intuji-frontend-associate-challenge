@@ -160,3 +160,9 @@ $font-sizes: (
 		padding: 32px;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.page-wrapper {
+		padding: 32px 16px 124px;
+	}
+}

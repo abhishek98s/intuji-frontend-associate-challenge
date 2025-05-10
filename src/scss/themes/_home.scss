@@ -288,12 +288,37 @@
 			order: 0;
 		}
 
-		.recent-transaction-wrapper {
+
+		.savings-wrapper {
 			order: 1;
 		}
 
-		.savings-wrapper {
+		.recent-transaction-wrapper {
 			order: 2;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.dashboard-page-wrapper main .sc-dashboard-content {
+
+
+		.overview-wrapper .overview-box {
+			grid-template-columns: 1fr;
+		}
+
+		&>* {
+			grid-column: 1/-1;
+		}
+
+		.analytics-wrapper {
+			h2 {
+				width: 100%;
+			}
+
+			.time-select {
+				margin-left: auto;
+			}
 		}
 	}
 }

@@ -155,3 +155,38 @@ header.top-header {
 		}
 	}
 }
+
+@media screen and (max-width: 922px) {
+
+	header.top-header .user-info-wrapper {
+		max-width: 400px;
+		position: fixed;
+		bottom: 32px;
+		left: 50%;
+		z-index: 50;
+		transform: translateX(-50%);
+		border: 1px solid $neutral-300;
+		box-shadow: 0 24px 16px -12px $neutral-400;
+		animation: bottomToTop ease-in-out .4s;
+
+		@keyframes bottomToTop {
+			from {
+				bottom: -200px;
+			}
+
+			to {
+				bottom: 32px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 922px) {
+	header.top-header .user-info-wrapper {
+		max-width: 250px;
+
+		.user-details-wrapper .name {
+			display: none;
+		}
+	}
+}
