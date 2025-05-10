@@ -1,5 +1,13 @@
+@use './vars' as *;
+
 a {
   text-decoration: none;
+  color: $blue-800;
+}
+
+figure,
+img {
+  margin: 0;
 }
 
 img,
@@ -15,6 +23,25 @@ body {
   font-weight: 400;
   font-size: 16px;
   font-optical-sizing: auto;
+  background-color: $blue-10;
+  color: $blue-800;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.icon-wrapper {
+  max-width: 24px;
+  width: 100%;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-wrapper {
