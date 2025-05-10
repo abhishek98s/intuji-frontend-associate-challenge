@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const sidebarWrapper = document.querySelector('#sidebar-wrapper');
 	const menuIcon = iconMenu.querySelector('img');
 
-	iconMenu.addEventListener('click', function () {
+	function toggleSidebar() {
 		sidebarWrapper.classList.toggle('active');
 
 		const originalSrc = 'images/icons/icon-menu.svg';
@@ -13,6 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
 			menuIcon.src = activeSrc;
 		} else {
 			menuIcon.src = originalSrc;
+		}
+	}
+
+	iconMenu.addEventListener('click', toggleSidebar);
+
+	document.addEventListener('click', function (event) {
+		if (sidebarWrapper.classList.contains('active') && !sidebarWrapper.contains(event.target) && event.target !== iconMenu) {
+			toggleSidebar()
 		}
 	});
 });
